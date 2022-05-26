@@ -16,7 +16,7 @@ public class SILab2Test {
         ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of("0#".split(""))));
         assertTrue(ex.getMessage().contains("List length should be a perfect square"));
         //3
-        assertEquals(List.of("#", "2", "#", "2", "2", "#", "#", "#", "#"),SILab2.function(List.of("#","0","#","0","0","#","#","#","#")));
+        assertEquals(List.of("#", "2", "#", "2", "2", "#", "#", "#", "#"), SILab2.function(List.of("#", "0", "#", "0", "0", "#", "#", "#", "#")));
     }
 
     @Test
@@ -28,7 +28,7 @@ public class SILab2Test {
         //2
         ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of("0#".split(""))));
         assertTrue(ex.getMessage().contains("List length should be a perfect square"));
-        //3       
-        assertEquals(List.of("1", "1", "#", "#", "2", "#", "1", "0", "1"),SILab2.function(List.of("0","0","#","#","0","#","0","0","0")));
+        //3
+        assertEquals(List.of("1", "1", "#", "#", "2", "#", "1", "0", "1"), SILab2.function(List.of("0", "0", "#", "#", "0", "#", "0", "0", "0")));
     }
 }
